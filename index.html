@@ -135,10 +135,14 @@
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Sahin Olut  &#x2043; 2017</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						<div class="container">
+
+							<ul class="copyright">
+
+								<li>&copy; Sahin Olut  &#x2043; 2017</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+
+							</ul>
+
 						</div>
 					</section>
 
@@ -158,15 +162,15 @@
 						var htmltag = "&#";
 						var charlist = ['111', '108', '117', '116', '46', '115', '97', '104', '105', '110'];
 						var charlist2 = ['o', 'l', 'u', 't', '.', 's', 'a', 'h','i','n'];
-						var personal_mail = "";
 						var mailto = "";
+						var plaintext = "";
 						for (let i = 0 ; i < charlist.length ; i++)
 						{
-							personal_mail += htmltag+(charlist[i]);
-							mailto += charlist2[i];
+							mailto += htmltag+(charlist[i]);
+							plaintext += charlist2[i];
 						}
-						var personal_mail1 = personal_mail + "@gmail.com" +"<br>If you have security concerns, you can always send your e-mails as encrypted. ";
-						var personal_mail2 = "mailto:" + mailto + "@gmail.com" 
+						var personal_mail1 = "My personal mail address is: " + mailto + "@gmail.com" +"<br>If you have security concerns, you can always send your e-mails as encrypted. ";
+						var personal_mail2 = "mailto:" + plaintext + "@gmail.com" 
 						document.getElementById("pid").innerHTML = personal_mail1;
 						document.getElementById("aid").href = personal_mail2;
 					}
