@@ -35,7 +35,7 @@
 						<li><a href="https://github.com/norveclibalikci" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://twitter.com/norveclibalikci" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.linkedin.com/in/%C5%9Fahin-olut-b0b018a1" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a  href="#four" id="aixd" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><a  href="" id="aid" onmouseover="pasteMail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -121,7 +121,7 @@
 										<header>
 												<h4>Contact with me</h4>
 												<p onmouseover="pasteMail()" id="pid">Click me to see my mail address. (Preventing web crawlers)<br>
-												If you have security concerns, you can always send your e-mails encrypted. </p>
+												If you have security concerns, you can always send your e-mails as encrypted. </p>
 											</header>
 								</div>
 							</section>
@@ -497,13 +497,16 @@
 				{
 					var htmltag = "&#";
 					var charlist = ['111', '108', '117', '116', '46', '115', '97', '104', '105', '110'];
+					var charlist2 = ['o', 'l', 'u', 't', '.', 's', 'a', 'h','i','n'];
 					var personal_mail = "";
+					var mailto = "";
 					for (let i = 0 ; i < charlist.length ; i++)
 					{
 						personal_mail += htmltag+(charlist[i]);
+						mailto += charlist2[i];
 					}
 					var personal_mail1 = personal_mail + "@gmail.com" +"<br>If you have security concerns, you can always send your e-mails as encrypted. ";
-					var personal_mail2 = "mailto:" + personal_mail + "@gmail.com" 
+					var personal_mail2 = "mailto:" + mailto + "@gmail.com" 
 					document.getElementById("pid").innerHTML = personal_mail1;
 					document.getElementById("aid").href = personal_mail2;
 				}
