@@ -1,12 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Sahin Olut</title>
+		<title>Sahin Olut Personal Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -38,6 +36,7 @@
 						<li><a  href="" id="aid" onmouseover="pasteMail()" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
+
 			</section>
 
 		<!-- Wrapper -->
@@ -122,22 +121,24 @@
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
-										<header>
-												<h4>Contact with me</h4>
-												<p onmouseover="pasteMail()" id="pid">Click me to see my mail address. (Preventing web crawlers)<br>
-												If you have security concerns, you can always send your e-mails as encrypted. </p>
-											</header>
-								</div>
+									<header>
+											<h4>Contact with me</h4>
+											<p onmouseover="pasteMail()" id="pid">Click me to see my mail address. (Preventing web crawlers)<br>
+											If you have security concerns, you can always send your e-mails as encrypted. </p>
+										</header>
+							</div>
 							</section>
-						
+
+					
+
 					</div>
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Sahin Olut  &#x2043; 2017</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Sahin Olut  &#x2043; 2017</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
 						</div>
 					</section>
 
@@ -150,25 +151,26 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 			<script>
-			function pasteMail(id)
-				{
-					var htmltag = "&#";
-					var charlist = ['111', '108', '117', '116', '46', '115', '97', '104', '105', '110'];
-					var charlist2 = ['o', 'l', 'u', 't', '.', 's', 'a', 'h','i','n'];
-					var personal_mail = "";
-					var mailto = "";
-					for (let i = 0 ; i < charlist.length ; i++)
+				function pasteMail(id)
 					{
-						personal_mail += htmltag+(charlist[i]);
-						mailto += charlist2[i];
+						var htmltag = "&#";
+						var charlist = ['111', '108', '117', '116', '46', '115', '97', '104', '105', '110'];
+						var charlist2 = ['o', 'l', 'u', 't', '.', 's', 'a', 'h','i','n'];
+						var personal_mail = "";
+						var mailto = "";
+						for (let i = 0 ; i < charlist.length ; i++)
+						{
+							personal_mail += htmltag+(charlist[i]);
+							mailto += charlist2[i];
+						}
+						var personal_mail1 = personal_mail + "@gmail.com" +"<br>If you have security concerns, you can always send your e-mails as encrypted. ";
+						var personal_mail2 = "mailto:" + mailto + "@gmail.com" 
+						document.getElementById("pid").innerHTML = personal_mail1;
+						document.getElementById("aid").href = personal_mail2;
 					}
-					var personal_mail1 = personal_mail + "@gmail.com" +"<br>If you have security concerns, you can always send your e-mails as encrypted. ";
-					var personal_mail2 = "mailto:" + mailto + "@gmail.com" 
-					document.getElementById("pid").innerHTML = personal_mail1;
-					document.getElementById("aid").href = personal_mail2;
-				}
-</script>
+	</script>
 
 	</body>
 </html>
